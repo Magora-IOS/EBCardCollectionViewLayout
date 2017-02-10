@@ -29,12 +29,12 @@ static NSString * const CellKind = @"CardCell";
 }
 
 - (NSInteger)cardWidth {
-    NSInteger retVal = self.collectionView.bounds.size.width - _offset.horizontal * 2;
+    NSInteger retVal = self.collectionView.bounds.size.width - _offset.horizontal * 3.0f / 2.0f;
     return retVal;
 }
 
 - (NSInteger)cardHeight {
-    NSInteger retVal = self.collectionView.bounds.size.height - _offset.vertical * 2;
+    NSInteger retVal = self.collectionView.bounds.size.height - _offset.vertical * 3.0f / 2.0f;
     return retVal;
 }
 
